@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				pacifico: ['Pacifico', 'cursive'],
+				dancing: ['Dancing Script', 'cursive'],
+				satisfy: ['Satisfy', 'cursive']
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +67,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				service: {
+					'red': '#a3453b',
+					'gray': '#7a7a7a',
+					'light': '#f5f5f5',
+					'accent': '#4a6fa5'
 				}
 			},
 			borderRadius: {

@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Brush+Script+MT&family=Pacifico&family=Dancing+Script&family=Lobster+Two&family=Great+Vibes&family=Satisfy&family=Allura&family=Sacramento&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +100,53 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  .flash-message {
+    @apply p-4 mb-4 rounded-md font-medium;
+  }
+
+  .flash-success {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .flash-error {
+    @apply bg-red-100 text-red-800;
+  }
+
+  .flash-info {
+    @apply bg-blue-100 text-blue-800;
+  }
+
+  .table-container {
+    @apply w-full overflow-x-auto;
+  }
+
+  .service-table {
+    @apply w-full border-collapse mt-4;
+  }
+
+  .service-table th {
+    @apply bg-gray-100 p-3 text-left border border-gray-200;
+  }
+
+  .service-table td {
+    @apply p-3 border border-gray-200;
+  }
+
+  .button {
+    @apply px-4 py-2 rounded-md font-medium transition-colors;
+  }
+
+  .button-primary {
+    @apply bg-service-accent text-white hover:bg-blue-700;
+  }
+
+  .button-destructive {
+    @apply bg-service-red text-white hover:bg-red-700;
+  }
+
+  .review-card {
+    @apply bg-white rounded-lg shadow-md p-4 mb-4;
   }
 }
